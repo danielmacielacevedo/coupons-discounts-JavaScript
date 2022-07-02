@@ -1,0 +1,161 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    font-size: 62.5%;
+    color: rgb(61, 61, 61);
+}
+
+header
+{
+    display: flex;
+    width: 100%;
+    min-width: 320px;
+    height: 40px;
+    background-color: #FF4940;
+    align-content: center;
+    margin-bottom: 22px;
+}
+
+header h1
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 2rem;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+}
+
+main
+{
+    min-width: 320px;
+}
+
+.calculator-container
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 22px;
+    width: 90%;
+    min-width: 280px;
+    max-width: 380px;
+    height: auto;
+    padding: 14px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #ff9792;
+    border-radius: 15px;
+    background-color: #ffebea;
+}
+
+.calculator-container h2
+{
+    margin-bottom: 10px;
+}
+
+.calculator-container label
+{
+    font-size: 1.2rem;
+}
+
+.calculator-container input
+{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    margin: 4PX 0 10px;
+    padding: 0 20px 0 20px;
+    background-color: white;
+}
+
+.calculator-container button
+{
+    width: 100%;
+    height: 25px;
+    margin: 0 0 10px 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #FF4940;
+    color: white;
+}
+
+.cupons
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 22px;
+    width: 90%;
+    min-width: 280px;
+    max-width: 380px;
+    height: auto;
+    padding: 14px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #ff9792;
+    border-radius: 15px;
+    background-color: #fff1f0;
+}
+.cupons ul
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6rem;
+    list-style: none;
+}
+
+@media only screen and (min-width: 600px)
+{
+    main
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .calculator-containers
+    {
+        display: flex;
+        margin: 0 auto;
+        padding: 0 20px;
+        align-content: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .calculator-container
+    {
+        width: 280px;
+    }
+    .cupons
+    {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        min-width: 400px;
+        max-width: 610px;
+        margin: 0 auto;
+    }
+    .cupons
+    {
+        width: 570px;
+        max-width: none;
+    }
+    .cupons ul 
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .cupons ul li,
+    .cupons h3
+    {
+        margin: 0 5px;
+    }
+}

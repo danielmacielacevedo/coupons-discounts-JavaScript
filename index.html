@@ -5,45 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porcentajes y descuentos</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-        <h1>PORCENTAJES Y DESCUENTOS</h1>
+        <h1 class="title-header">PORCENTAJES Y DESCUENTOS</h1>
     </header>
     <main>
-        <section>
-            <h2>Calcula cualquier cantidad con un descuento</h2>
-            <form action="">
-                <label for="inputCantidad">Escribe la cantidad</label>
-                <input id="inputCantidad" type="number">
-
-                <label for="inputDescuento">Escribe el descuento</label>
-                <input id="inputDescuento" type="number">
-                <button type="button" onclick="onClickButtonDiscount()">CALCULAR</button>
-
-                <p id="resultC"></p>
-            </form>
+        <section class="calculator-containers">
+            <section class="calculator-container">
+                <h2>Calcula cualquier cantidad con un descuento</h2>
+                <form action="">
+                    <label for="inputCantidad">Escribe la cantidad</label>
+                    <input id="inputCantidad" type="number">
+    
+                    <label for="inputDescuento">Escribe el descuento</label>
+                    <input id="inputDescuento" type="number">
+                    <button type="button" onclick="onClickButtonDiscount()">CALCULAR</button>
+    
+                    <p id="resultC"></p>
+                </form>
+            </section>
+            <section class="calculator-container">
+                <h2>Aplicar cupones a cualquier cantidad</h2>
+                <form action="">
+                    <label for="inputCantidadC">Escribe la cantidad</label>
+                    <input id="inputCantidadC" type="number">
+    
+                    <label for="inputCupon">Escribe el cupon</label>
+                    <input id="inputCupon" type="text">
+                    <button type="button" onclick="onClickButtonCupon()">CALCULAR</button>
+    
+                    <p id="resultCupon"></p>
+                </form>
+            </section>
         </section>
-        <section>
-            <h3>Cupones de ejemplo</h3>
-            <ul>
-                <li>BLACKFRIDAY (10%)</li>
-                <li>HOTSALE (28%)</li>
-                <li>WOW (1%)</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Aplicar cupones a cualquier cantidad</h2>
-            <form action="">
-                <label for="inputCantidadC">Escribe la cantidad</label>
-                <input id="inputCantidadC" type="number">
-
-                <label for="inputCupon">Escribe el cupon</label>
-                <input id="inputCupon" type="text">
-                <button type="button" onclick="onClickButtonCupon()">CALCULAR</button>
-
-                <p id="resultCupon"></p>
-            </form>
+        <section class="container-cupons">
+            <section class="cupons">
+                <h3>Cupones de ejemplo:</h3>
+                <ul>
+                    <li>"BLACKFRIDAY" <b>(10%)</b></li>
+                    <li>"HOTSALE" <b>(28%)</b></li>
+                    <li>"WOW" <b>(01%)</b></li>
+                </ul>
+            </section>
         </section>
     </main>
     <script src="./js/discount.js"></script>
